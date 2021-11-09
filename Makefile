@@ -5,7 +5,7 @@ REPO = registry.cn-shanghai.aliyuncs.com
 NAMESPACE = jibudata
 IMG_NAME = app-hook-operator
 HOOK_IMG_NAME = app-hook
-VERSION = 0.0.2
+VERSION = $(shell git rev-parse --abbrev-ref HEAD)-latest
 
 
 CHANNELS="stable-v1"

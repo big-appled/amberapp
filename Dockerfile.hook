@@ -38,4 +38,4 @@ COPY --from=builder /workspace/apphook .
 COPY --from=builder /workspace/hack/quiesce.sh .
 COPY --from=builder /workspace/hack/unquiesce.sh .
 
-ENTRYPOINT ["/bin/sleep", "3600"]
+ENTRYPOINT ["/bin/sleep", "infinity"]
